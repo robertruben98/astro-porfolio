@@ -1,9 +1,49 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+import GithubIcon from "../icons/GithubIcon.astro";
+import SocialPill from "../components/SocialPill.astro";
+import MailIcon from "../icons/MailIcon.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-	</main>
+<Layout title="Porfolio de RobertDev - Desarrollador y Programador Web con +2 años de experiencia"
+        description="Contrata a RobertDev para crear tu aplicacion web o movil. Desarrollador Web. Especializado en crear aplicaciones unicas.">
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+        <main>
+            <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+                Hey, soy robertdev
+                <a href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/"
+                   target="_blank"
+                   rel="noopener"
+                   class="flex justify-center items-center pl-2">
+                    <Badge>Disponible para trabajar</Badge>
+                </a>
+            </h1>
+            <h2 class="text-2xl text-wrap">
+                <span>+2 años de experiencia</span>. <span class="text-amber-300/90">Desarrollador Web</span>.
+                <span class="text-red-200/90">De Valencia, España</span>.
+                <span class="opacity-75">Especializado en crear aplicaciones únicas.</span>
+            </h2>
+
+            <nav class="gap-x-2 flex mt-8">
+                <SocialPill href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/">
+                    <LinkedInIcon class="size-6"/>
+                    LinkedIn
+                </SocialPill>
+                <SocialPill href="https://github.com/robertruben98">
+                    <GithubIcon class="size-6"/>
+                    Github
+                </SocialPill>
+                <SocialPill href="mailto:robertruben98@gmail.com">
+                    <MailIcon class="size-6"/>
+                    Gmail
+                </SocialPill>
+                <!--<li>-->
+                <!--    &lt;!&ndash;<a href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/"><GithubIcon class="w-6 h-6"/>Github</a>&ndash;&gt;-->
+                <!--    <a href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/"><PythonIcon class="w-12 h-12"/></a>-->
+                <!--</li>-->
+            </nav>
+        </main>
+    </section>
 </Layout>
