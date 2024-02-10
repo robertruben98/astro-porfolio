@@ -7,11 +7,12 @@ import SocialPill from "../components/SocialPill.astro";
 import MailIcon from "../icons/MailIcon.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
 ---
 
 <Layout title="Porfolio de RobertDev - Desarrollador y Programador Web con +2 años de experiencia"
         description="Contrata a RobertDev para crear tu aplicacion web o movil. Desarrollador Web. Especializado en crear aplicaciones unicas.">
-    <SectionContainer>
+    <SectionContainer class="py-44 pb-24">
         <main>
             <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
                 Hey, soy robertdev
@@ -49,6 +50,10 @@ import SectionContainer from "../components/SectionContainer.astro";
         </main>
     </SectionContainer>
     <SectionContainer>
+        <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+            <BriefCaseIcon class="size-7"/>
+            Experiencia laboral
+        </h2>
         <Experience/>
     </SectionContainer>
 </Layout>
