@@ -2,15 +2,22 @@
 import ExperienceItem from "./ExperienceItem.astro";
 const EXPERIENCE = [
     {
-        date: 'February',
-        title: 'Application UI code in Tailwind CSS',
-        description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
+        date: 'Actualmente....',
+        title: 'Backend Engineer',
+        description: 'Responsable de la plataforma, componentes y utilidades para la creación y desarrollo ' +
+            'de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación',
+        link: ''
+    },
+    {
+        date: 'Septiembre 2022',
+        title: 'Backend Engineer',
+        description: 'Buscar soluciones para un Ecommerce. Desarrollo de pasarelas de pago. Soluciones con Elasticsearch para la busqueda de productos',
         link: ''
     }
 ]
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class="relative border-s border-gray-200 ml-3">
     {
         EXPERIENCE.map((exp) => <li class="mb-10 ms-4">
             <ExperienceItem {...exp}/>

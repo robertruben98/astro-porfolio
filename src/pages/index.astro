@@ -12,10 +12,10 @@ import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
 
 <Layout title="Porfolio de RobertDev - Desarrollador y Programador Web con +2 años de experiencia"
         description="Contrata a RobertDev para crear tu aplicacion web o movil. Desarrollador Web. Especializado en crear aplicaciones unicas.">
-    <SectionContainer class="py-44 pb-24">
-        <main>
-            <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
-                Hey, soy robertdev
+    <main class="px-4">
+        <SectionContainer class="py-44 pb-24">
+            <h1 class="text-white lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">
+                Hey, soy RobertDev
                 <a href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/"
                    target="_blank"
                    rel="noopener"
@@ -47,13 +47,13 @@ import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
                 <!--    <a href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/"><PythonIcon class="w-12 h-12"/></a>-->
                 <!--</li>-->
             </nav>
-        </main>
-    </SectionContainer>
-    <SectionContainer id="experience">
-        <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-            <BriefCaseIcon class="size-7"/>
-            Experiencia laboral
-        </h2>
-        <Experience/>
-    </SectionContainer>
+        </SectionContainer>
+        <SectionContainer id="experience">
+            <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+                <BriefCaseIcon class="size-7"/>
+                Experiencia laboral
+            </h2>
+            <Experience/>
+        </SectionContainer>
+    </main>
 </Layout>
