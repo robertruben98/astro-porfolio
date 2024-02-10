@@ -5,11 +5,13 @@ import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import GithubIcon from "../icons/GithubIcon.astro";
 import SocialPill from "../components/SocialPill.astro";
 import MailIcon from "../icons/MailIcon.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 ---
 
 <Layout title="Porfolio de RobertDev - Desarrollador y Programador Web con +2 años de experiencia"
         description="Contrata a RobertDev para crear tu aplicacion web o movil. Desarrollador Web. Especializado en crear aplicaciones unicas.">
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <SectionContainer>
         <main>
             <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
                 Hey, soy robertdev
@@ -45,5 +47,8 @@ import MailIcon from "../icons/MailIcon.astro";
                 <!--</li>-->
             </nav>
         </main>
-    </section>
+    </SectionContainer>
+    <SectionContainer>
+        <Experience/>
+    </SectionContainer>
 </Layout>
