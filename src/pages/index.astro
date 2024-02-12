@@ -17,7 +17,7 @@ import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
             <img class="rounded-full size-12 mb-4"
                  src="https://media.licdn.com/dms/image/D4E03AQHaXw1zyWkMqQ/profile-displayphoto-shrink_800_800/0/1679060605937?e=2147483647&v=beta&t=nTs70Q0F4d_15y-tPsH7fEvS4jqZI2JcjkH9PQ7fH3s"
                  alt="robertdev photo"/>
-            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10">
+            <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
                 Hey, soy RobertDev
                 <a href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/"
                    target="_blank"
@@ -26,23 +26,23 @@ import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
                     <Badge>Disponible para trabajar</Badge>
                 </a>
             </h1>
-            <h2 class="text-2xl text-wrap">
+            <h2 class="text-2xl text-wrap max-w-[700px]">
                 <span>+2 años de experiencia</span>. <span class="text-amber-300/90">Desarrollador Web</span>.
                 <span class="text-red-200/90">De Habana, Cuba</span>.
                 <span class="opacity-75">Especializado en crear aplicaciones únicas.</span>
             </h2>
 
-            <nav class="gap-x-2 flex flex-wrap mt-8 gap-y-2">
+            <nav class="gap-4 flex flex-wrap mt-8">
                 <SocialPill href="https://www.linkedin.com/in/robert-ruben-benitez-bosque/">
-                    <LinkedInIcon class="size-6"/>
+                    <LinkedInIcon class="size-4 lg:size-6"/>
                     LinkedIn
                 </SocialPill>
                 <SocialPill href="https://github.com/robertruben98">
-                    <GithubIcon class="size-6"/>
+                    <GithubIcon class="size-4 lg:size-6"/>
                     Github
                 </SocialPill>
                 <SocialPill href="mailto:robertruben98@gmail.com">
-                    <MailIcon class="size-6"/>
+                    <MailIcon class="size-4 lg:size-6"/>
                     Gmail
                 </SocialPill>
                 <!--<li>-->
@@ -56,7 +56,7 @@ import BriefCaseIcon from "../icons/BriefCaseIcon.astro";
                 <BriefCaseIcon class="size-7"/>
                 Experiencia laboral
             </h2>
-            <Experience/>
+            <Experience class="max-w-[700px]"/>
         </SectionContainer>
     </main>
 </Layout>

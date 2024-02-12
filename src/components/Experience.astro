@@ -15,9 +15,10 @@ const EXPERIENCE = [
         link: ''
     }
 ]
+const {class: className} = Astro.props
 ---
 
-<ol class="relative border-s border-gray-200 ml-3">
+<ol class=`relative border-s border-gray-200 ml-3 ${className}`>
     {
         EXPERIENCE.map((exp) => <li class="mb-10 ms-4">
             <ExperienceItem {...exp}/>
