@@ -4,25 +4,44 @@ const EXPERIENCE = [
     {
         date: 'Actualmente....',
         title: 'Backend Engineer',
-        description: 'Responsable de la plataforma, componentes y utilidades para la creación y desarrollo ' +
-            'de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación',
+        description: `Payments Application Maintenance and Development: Managing and enhancing the Payments application, a store platform dedicated to electronic payment operations, to ensure its optimal functionality and security.
+                SiteConfigurator Application Maintenance: Overseeing the SiteConfigurator application....`,
+        long_description: `Payments Application Maintenance and Development: Managing and enhancing the Payments application, a store platform dedicated to electronic payment operations, to ensure its optimal functionality and security.
+                SiteConfigurator Application Maintenance: Overseeing the SiteConfigurator application, dedicated to store creation, and ensuring its ongoing reliability and performance.
+                OpenId Application Maintenance: Maintaining the OpenId application, which handles authorization and authentication for systems requesting resources from servers, ensuring secure and efficient access control.
+                Elasticsearch Application Maintenance: Managing the SearchEngine application, designed for the store's search functionality, to provide users with an effective and responsive search experience.
+                Data Task Execution: Undertaking various data-related tasks to support system operations and improve data integrity and efficiency.
+                SMS API integration: API to send sms to customers when their orders are outgoing
+                ChatGPT API Integration: API for sentiment analysis.`,
         link: ''
     },
     {
-        date: 'Septiembre 2022',
-        title: 'Backend Engineer',
-        description: 'Buscar soluciones para un Ecommerce. Desarrollo de pasarelas de pago. Soluciones con Elasticsearch para la busqueda de productos',
+        date: '2021-2024',
+        title: 'Frontend Engineer',
+        description: 'Bus Seat Reservation System using Angular.',
+        long_description: `During my tenure at Lurraldebus from 2021 to 2022, I had the opportunity to work on a significant project: the development of a Bus Seat Reservation System using Angular.
+                    Angular Expertise: Leveraging the power of Angular, I played a vital role in creating a dynamic and user-friendly reservation system. This involved building responsive web interfaces that facilitated the booking of bus seats.
+                    Business Flow Validation: I implemented a robust set of validation procedures to ensure the correct flow of the bus seat reservation process. These validations guaranteed data accuracy and a smooth user experience, contributing to higher customer satisfaction.
+                    Enhanced Efficiency: The project aimed to streamline the reservation process, making it more efficient and user-friendly. My contributions played a significant role in achieving this goal, ultimately improving the overall service provided by Lurraldebus.`,
         link: ''
-    }
+    },
+    {
+        date: '2021-2023',
+        title: 'University Professor',
+        description: `In my previous role, I had the privilege of instructing a range of subjects, including Introduction to Programming, Object-Oriented Design and Programming, Python Programming, Interface Design, and Testing. Additionally, I served as a thesis tutor for two dedicated students.`,
+        long_description: `In my previous role, I had the privilege of instructing a range of subjects, including Introduction to Programming, Object-Oriented Design and Programming, Python Programming, Interface Design, and Testing. Additionally, I served as a thesis tutor for two dedicated students.`,
+        link: ''
+    },
 ]
 const {class: className} = Astro.props
 ---
 
 <ol class=`relative border-s border-gray-200 ml-3 ${className}`>
     {
-        EXPERIENCE.map((exp) => <li class="mb-10 ms-4">
-            <ExperienceItem {...exp}/>
-        </li>)
+        EXPERIENCE.map((exp) =>
+                <li class="mb-10 ms-4">
+                    <ExperienceItem {...exp}/>
+                </li>)
     }
 </ol>
 
